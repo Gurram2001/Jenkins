@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Docker plus jenkins') {
             steps {
+                sh' docker image ls'
                 sh 'df -h'
             }
         }
